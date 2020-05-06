@@ -4,6 +4,8 @@ import HomePage from "./pages/homepage";
 import ShopPage from "./pages/shop page/shopPage";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from './components/header/header.js';
+import Registration from "./components/registration/registration";
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage}></Route>
         <Route path="/shop" component={ShopPage}></Route>
+        <Route path="/registration" component={Registration}></Route>
       </Switch>
     </BrowserRouter>
   );
